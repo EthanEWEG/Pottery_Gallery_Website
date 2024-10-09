@@ -1,0 +1,359 @@
+/* Name: Ethan EG */
+/* Date: 2024-10-09 */
+/* File: Stylesheet.css */
+
+body {
+    background-color: rgb(152, 189, 201);
+    font-family: Calibri, sans-serif;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px; 
+    background-color: whitesmoke;
+
+}
+
+.logo {
+    margin: 0 10%;
+    height: 80px;
+    width: auto;
+}
+
+.header-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.header-links a {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #626262;
+    font-size: 30px;
+}
+
+.header-links a:hover {
+    color: rgb(152, 189, 201); 
+}
+
+
+
+
+
+/* index */
+.banner-container {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.banner {
+    height: 800px; 
+    width: auto;   
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.banner-text {
+    max-width: 50%; 
+    padding-right: 40px;
+    text-align: left;
+}
+
+.banner-text-header {
+    margin-bottom: -60px;
+}
+
+.banner-text h1 {
+    font-size: 100px;
+    color: #333;
+}
+
+.banner-text p {
+    font-size: 32px;
+    color: #626262;
+}
+
+.gallery-button-container{
+    display: flex; 
+    justify-content: left; 
+    margin-top: 60px; 
+}
+
+.gallery-button {
+    display: inline-block; 
+    padding: 100px 210px; 
+    font-size: 40px; 
+    text-decoration: none;
+    color: whitesmoke; 
+    background-color: #333; 
+    border-radius: 15px; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+}
+
+.gallery-button:hover {
+    background-color: rgb(152, 189, 201); /* Change background on hover */
+}
+
+
+
+
+
+/* gallery */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: -20px;
+    color: #333;
+}
+
+.gallery-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+    padding-bottom:110px;
+    position: relative;
+}
+
+.inner-gallery-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: hidden; 
+    position: relative;
+}
+
+.gallery-images {
+    flex-shrink: 0;
+    width: auto;
+    height: 360px;
+    margin: 0 15px;
+    border-radius: 8px; 
+    /* Prevent text selection */
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+}
+
+.arrow-left, .arrow-right {
+    cursor: pointer;
+    font-size: 60px;
+    color: #333;
+    padding: 10px;
+    position: absolute;
+    /* Prevent text selection */
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+}
+
+.arrow-left {
+    right: 90%;
+}
+
+.arrow-right {
+    left: 90%;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color: #999;
+}
+
+.gallery-videos-container {
+    display: flex;  
+    flex-wrap: wrap;         
+    justify-content: center; 
+    padding: 0 80px;
+    padding-bottom:100px;
+}
+
+video {
+    height: auto; 
+    max-width: 25%;
+}
+
+
+
+
+
+/* about */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: -20px;
+    color: #333;
+}
+
+.outer-portait-container{
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.potter-portrait-container {
+    background-color: #333;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.creator-portrait-container {
+    background-color: #626262;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.portrait-image {
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.potter-portrait-container h2, .creator-portrait-container h2{
+    color: rgb(222, 222, 222);
+    font-size: 35px;
+    margin-top: -20px;
+}
+
+.potter-portrait-container p, .creator-portrait-container p{
+    color: rgb(222, 222, 222);
+}
+
+
+
+
+
+/* contact */
+.contact-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-top:120px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+}
+
+.contact-title-container{
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 80px;
+}
+
+.input-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-container input, 
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px 20px; 
+    background-color: whitesmoke; 
+    width: 100%; 
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-left a:hover{
+    color: rgb(152, 189, 201);
+}
+
+.footer-right {
+    display: flex;
+}
+
+.social-icon {
+    width: 50px; /* Adjust icon size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 25px; /* Space between icons */
+}
+
+.social-icon:hover {
+    opacity: 0.7; /* Slightly dim icons on hover */
+}

@@ -1,0 +1,126 @@
+<!--Name: Ethan EG -->
+<!--Date: 2024-10-09 -->
+<!--File: gallery.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan EG">
+    <title>Megs Pottering Gallery</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header"> 
+        <!-- logo on the left -->
+        <img src="images/meganlogo.png" alt="Megan Logo" class="logo">
+        <!-- navigation links on the right -->
+        <nav class="header-links">
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+
+    <!-- body -->
+    <main class="gallery-container">
+        <div class="gallery-title">
+            <h1>Pottery Photos</h1>
+        </div>
+        <div class="gallery-images-container">
+            <div class="inner-gallery-images-container">
+                <img src="images/PotteryImages/mug.jpg" alt="Mug 1" class="gallery-images">
+                <img src="images/PotteryImages/mug2.jpg" alt="Mug 2" class="gallery-images">
+                <img src="images/PotteryImages/mug3.jpg" alt="Mug 3" class="gallery-images">
+                <img src="images/PotteryImages/board.jpg" alt="board" class="gallery-images">
+                <img src="images/PotteryImages/board2.jpg" alt="board 2" class="gallery-images">
+                <img src="images/PotteryImages/platter.jpg" alt="platter" class="gallery-images">
+                <img src="images/PotteryImages/earings.jpg" alt="earings" class="gallery-images">
+                <img src="images/PotteryImages/earings2.jpg" alt="earings 2" class="gallery-images">
+                <img src="images/PotteryImages/pot.jpg" alt="pot" class="gallery-images">
+                <img src="images/PotteryImages/garlic.jpg" alt="garlic" class="gallery-images">
+                <img src="images/PotteryImages/garlic2.jpg" alt="garlic 2" class="gallery-images">
+                <img src="images/PotteryImages/garlic3.jpg" alt="garlic 3" class="gallery-images">
+                <img src="images/PotteryImages/noodle.jpg" alt="noodle" class="gallery-images">
+                <img src="images/PotteryImages/noodle2.jpg" alt="noodle 2" class="gallery-images">
+                <img src="images/PotteryImages/noodle3.jpg" alt="noodle 3" class="gallery-images">
+                <img src="images/PotteryImages/mug4.jpg" alt="Mug 4" class="gallery-images">
+                <img src="images/PotteryImages/mug5.jpg" alt="Mug 5" class="gallery-images">
+                <img src="images/PotteryImages/mug6.jpg" alt="Mug 6" class="gallery-images">
+                <img src="images/PotteryImages/grater.jpg" alt="grater" class="gallery-images">
+                <img src="images/PotteryImages/grater2.jpg" alt="grater 2" class="gallery-images">
+                <img src="images/PotteryImages/brie.jpg" alt="brie" class="gallery-images">
+                <img src="images/PotteryImages/magnet.jpg" alt="magnet" class="gallery-images">
+                <img src="images/PotteryImages/magnet2.jpg" alt="magnet 2" class="gallery-images">
+                <img src="images/PotteryImages/bird.jpg" alt="bird" class="gallery-images">
+                <img src="images/PotteryImages/meg.jpg" alt="meg" class="gallery-images">
+                <img src="images/PotteryImages/meg2.jpg" alt="meg 2" class="gallery-images">
+                <img src="images/PotteryImages/multi.jpg" alt="multi" class="gallery-images">
+                <img src="images/PotteryImages/soup.jpg" alt="soup" class="gallery-images">
+                <img src="images/PotteryImages/plant.jpg" alt="plant" class="gallery-images">
+                <img src="images/PotteryImages/plant2.jpg" alt="plant 2" class="gallery-images">
+            </div>
+            <div class="arrow-left" onclick="prevImages()">&#10094;</div>
+            <div class="arrow-right" onclick="nextImages()">&#10095;</div>
+        </div>
+        <div class="gallery-title">
+            <h1>Pottery Videos</h1>
+        </div> 
+        <div class="gallery-videos-container">
+            <video controls>
+                <source src="images/PotteryVideos/video1.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video2.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video3.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video4.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video5.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video6.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video7.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="images/PotteryVideos/video8.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="about.html">Website by Ethan EG</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.instagram.com/megspottering/" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@megspottering" target="_blank">
+                <img src="images/tiktok.webp" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/megspottering/" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
